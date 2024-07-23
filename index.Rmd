@@ -1,0 +1,34 @@
+---
+title: "Palmer Penguins Data Set"
+author: "GDub"
+date: "2024-07-23"
+output: 
+  html_document: 
+    toc: true
+    keep_md: true
+---
+
+```{r}
+library(palmerpenguins)
+library(ggplot2)
+```
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE, output_file='index.html')
+```
+
+## Palmer Penguins Sample Dataset
+
+This document is a quick test of publishing my projects from RStudio as I work thru Coursera's Data Analytics Certificate. For more details, see <http://creativepolymath.github.io>.
+
+```{r penguins}
+summary(penguins)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r penguins2, echo=FALSE}
+ggplot(data=penguins, aes(x=flipper_length_mm, y=body_mass_g))+geom_point(aes(color=species))
+```
