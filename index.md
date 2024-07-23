@@ -16,7 +16,7 @@ library(ggplot2)
 
 
 ``` r
-knitr::opts_chunk$set(echo = TRUE, output_file='index.html')
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Palmer Penguins Sample Dataset
